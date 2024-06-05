@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Open+Sans:wght@400;600;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-summer {
+  background: linear-gradient(135deg, #FFDB58, #FFA500);
+}
+
+.bg-winter {
+  background: linear-gradient(135deg, #00BFFF, #1E90FF);
+}
+
+.bg-rainy {
+  background: linear-gradient(135deg, #4682B4, #5F9EA0);
+}
+
+.bg-drizzle {
+  background: linear-gradient(135deg, #A4C6FF, #6EA6FF);
+}
+
+.bg-thunderstorm {
+  background: linear-gradient(135deg, #00008B, #4B0082);
+}
+
+.bg-cloudy {
+  background: linear-gradient(135deg, #B0C4DE, #778899);
+}
+
+.bg-default {
+  background: linear-gradient(135deg, white, white);
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.animate-fade-in {
+  @apply opacity-0;
+  animation: fade-in 0.5s forwards;
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
